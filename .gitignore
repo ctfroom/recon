@@ -3,3 +3,4 @@
 /temp/temp.config.php
 /build/database/db.php
 composer.*
+/build/core/config.php

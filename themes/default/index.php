@@ -2,81 +2,24 @@
     $pages->protected(false);
     $pages->load_theme_file(array('file'=>'head2', 'folder' => 'global'));
 ?>
-
 <body>
 
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top" data-scrollto-offset="0">
         <div class="container-fluid d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+            <a href="<?php echo ICE_URL ?>" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1>HeroBiz<span>.</span></h1>
+                <h1>Targeted<span>Ventures</span></h1>
             </a>
 
             <nav id="navbar" class="navbar">
                 <ul>
-
-                    <li class="dropdown"><a href="#"><span>Home</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li><a href="index.html">Home 1 - index.html</a></li>
-                            <li><a href="index-2.html" class="active">Home 2 - index-2.html</a></li>
-                            <li><a href="index-3.html">Home 3 - index-3.html</a></li>
-                            <li><a href="index-4.html">Home 4 - index-4.html</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li class="dropdown megamenu"><a href="#"><span>Mega Menu</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li>
-                                <a href="#">Column 1 link 1</a>
-                                <a href="#">Column 1 link 2</a>
-                                <a href="#">Column 1 link 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Column 2 link 1</a>
-                                <a href="#">Column 2 link 2</a>
-                                <a href="#">Column 3 link 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Column 3 link 1</a>
-                                <a href="#">Column 3 link 2</a>
-                                <a href="#">Column 3 link 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Column 4 link 1</a>
-                                <a href="#">Column 4 link 2</a>
-                                <a href="#">Column 4 link 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
-                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                        </ul>
-                    </li>
+                    <li><a class="nav-link scrollto" href="<?php echo ICE_URL ?>">Home</a></li>
+					<li><a class="nav-link scrollto" href="<?php echo ICE_URL ?>#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="<?php echo ICE_URL ?>#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="<?php echo ICE_URL ?>#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="<?php echo ICE_URL ?>#team">Team</a></li>
                     <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle d-none"></i>
@@ -100,7 +43,7 @@
                         </div>
 
                         <div class="col-lg-9 text-center">
-                            <h2>Welcome to HeroBiz</h2>
+                            <h2>Welcome to <?php echo SITE_TITLE ?></h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -1546,7 +1489,7 @@
 
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-info">
-                            <h3>HeroBiz</h3>
+                            <h3><?php echo SITE_TITLE ?></h3>
                             <p>
                                 A108 Adam Street <br>
                                 NY 535022, USA<br><br>
@@ -1597,7 +1540,7 @@
 
                 <div class="d-flex flex-column align-items-center align-items-lg-start">
                     <div class="copyright">
-                        &copy; Copyright <strong><span>HeroBiz</span></strong>. All Rights Reserved
+                        &copy; Copyright <strong><span><?php echo SITE_TITLE ?></span></strong>. All Rights Reserved
                     </div>
                     <div class="credits">
                         <!-- All the links in the footer should remain intact. -->
@@ -1614,6 +1557,7 @@
                     <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
                     <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
                     <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+					<a href="https://github.com/jonesbaraza/recon" class="github"><i class="bi bi-github"></i></a>
                 </div>
 
             </div>

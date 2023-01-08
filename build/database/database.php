@@ -37,3 +37,11 @@
         echo $e->getMessage();
         exit();
     }
+
+    /**
+     * Rename this to db.php on your development environment so that you can create a database connection. For consistency, please use the credentials below to create your first database. You can always change this information once you know your way around this software.
+     */
+    /*
+    database: targeted_v3n7ur3s
+    user: dev_c0mUs3r
+    password: dev_%7str(8)
